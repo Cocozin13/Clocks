@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="clocki.js" defer></script>
+    <title>Cloki</title>
+</head>
+<body>
+    <div class='btncont'>
+    <button class="links" onclick="Switch(event,'digital')">Digital</button>
+    <button class="links" onclick="Switch(event,'analog')">Analog</button>
+    <button class="links" onclick="Switch(event,'ewc')">EWC</button>
+    </div>
+
+    <div id="digital" class="content"></div>
+    <div id="analog" class="content">
+        <div class="pont hours" data-hours></div>
+        <div class="pont minutes" data-minutes></div>
+        <div class="pont seconds" data-seconds></div>
+        <div class="number one">1</div>
+        <div class="number two">2</div>
+        <div class="number three">3</div>
+        <div class="number four">4</div>
+        <div class="number five">5</div>
+        <div class="number six">6</div>
+        <div class="number seven">7</div>
+        <div class="number eight">8</div>
+        <div class="number nine">9</div>
+        <div class="number ten">10</div>
+        <div class="number eleven">11</div>
+        <div class="number twelve">12</div>
+    </div>
+    <div id="ewc" class="content">
+        <table>
+            <tr>
+                <td class="preset">IT'S</td>
+                <td id="ewcHalf">HALF</td>
+                <td id="ewcTen2">TEN</td>
+            </tr>
+
+            <tr>
+                <td id="ewcQuarter">QUARTER</td>
+                <td id="ewcTwenty">TWENTY</td>
+                <td id="ewcMinutes">MINUTES</td>
+            </tr>
+            <tr>
+                <td id="ewcTo">TO</td>
+                <td id="ewcPast">PAST</td>
+                <td id="ewcOne">ONE</td>
+            </tr>
+            <tr>
+                <td id="ewcTwo">TWO</td>
+                <td id="ewcThree">THREE</td>
+                <td id="ewcFour">FOUR</td>
+            </tr>
+            <tr>
+                <td id="ewcFive">FIVE</td>
+                <td id="ewcSix">SIX</td>
+                <td id="ewcSeven">SEVEN</td>
+            </tr>
+            <tr>
+                <td id="ewcEight">EIGHT</td>
+                <td id="ewcNine">NINE</td>
+                <td id="ewcTen">TEN</td>
+            </tr>
+            <tr>
+                <td id="ewcEleven">ELEVEN</td>
+                <td id="ewcTwelve">TWELVE</td>
+                <td class="preset">O'CLOCK</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

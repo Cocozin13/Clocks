@@ -1,0 +1,136 @@
+body {
+    background-image: url('time.jpg');
+    background-size: cover;
+    color: white;
+    font-size: 6em;
+    height: 95vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#digital {
+    background-color: black;
+    padding: 20px;
+    border: 5px solid white;
+}
+
+#analog {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    position: relative;
+    border: 5px solid grey;
+}
+
+#analog::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 50%;
+    left:49%;
+    transform: translate(-50%,-50%);
+    background-color: black;
+    z-index: 20;
+}
+
+.number {
+    --rotation: 0;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 3rem;
+    color: black;
+    transform: rotate(var(--rotation))
+}
+
+.one{--rotation: 30deg}
+.two{--rotation: 60deg}
+.three{--rotation: 90deg}
+.four{--rotation: 120deg}
+.five{--rotation: 150deg}
+.six{--rotation: 180deg}
+.seven{--rotation: 210deg}
+.eight{--rotation: 240deg}
+.nine{--rotation: 270deg}
+.ten{--rotation: 300deg}
+.eleven{--rotation: 330deg}
+.twelve{--rotation: 0deg}
+
+.pont {
+    position: absolute;
+    text-align: center;
+    bottom: 28%;
+    left: 49%;  
+    background-color: black ;
+    transform: translate(-50%, -50%) rotate(calc(var(--rotation) * 1deg));
+    transform-origin: bottom;
+    z-index: 10;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 5px;
+}
+
+.hours {
+    width: 15px;
+    height: 100px;
+    top: 40%;
+}
+
+.minutes {
+    width: 8px;
+    height: 200px;
+}
+
+.seconds {
+    width: 6px;
+    height: 225px;
+    background-color: red;
+}
+
+
+.btncont{
+    position: absolute;
+    left: 5%;
+    width: 0px;     
+    display: block;
+}
+
+.content {
+    display: none;
+}
+
+table {
+    font-size: 3rem;
+    border: 5px solid grey;
+    background-color: black;
+    color: whitesmoke;
+    padding: 20px;
+}
+
+td {
+    padding: 10px;
+}
+
+.preset {
+    color: orangered;
+}
+
+button {
+    color: red;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 10%;
+    padding: 5px 16px;
+    font-size: 1.5rem;
+}
+
+button:hover {
+    background-color: #bbb;
+    color: #f05;
+}
